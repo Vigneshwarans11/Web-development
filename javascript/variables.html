@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var--scope-- general
+    {
+        var a;//declaration
+        a=30;//initializatiion
+        console.log(a)
+
+        var a;//re-declaration
+        a=60;//re-initializatiion
+        console.log(a)
+
+
+        var a=90;//re-declaration in initializatiion
+        console.log(a)
+    }
+    console.log(a)
+
+
+    //var --scope--block
+    {
+        let b;
+        b=20;
+        console.log(b)
+
+       // let b=40; --- re-declararation not possible
+       // let b;---re-declaration not possible 
+
+       b=40;//re-initialization
+       console.log(b)
+       
+
+       b=80;
+       console.log(b)
+    }
+
+    //console.log(b)--outside block not possible ...error since we are trying tonaccess outside the block
+
+
+    {
+        //const (block scope)
+        //const c;seperate declaration is not possible
+        //c=40; seperately initialization posible
+
+        const c=100;//both declaration and initialization should be donw at same time
+        console.log(c)
+
+    }
+    console.log(c)//ouotside of block const is possible
+
+
+    //Hosting -- it is nothing but using the values before declaration and initialization the value
+    //Where this hosting is possible only for var alone..
+    //Where it will give output as undefined when he do hsting for var...
+    //where for let and const hosting is not possible as a result if we aretrying to do hosting it will throw error...
+
+
+    console.log(d)
+    var d=40;//declaration and initialisation
+
+    console.log(e)
+    let e=40//Declaration and initialization
+
+
+    console.log(f)
+    const f=60;//Declaration and Initialization
+
+
+
+
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function raja(a,b){
+            return a+b
+        }
+        console.log(raja(20,30))
+
+
+        function rani(a){
+            console.log("im rani...")
+            a()
+        }
+
+        rani(function robo(){
+            console.log("hi chinnu...")
+        })
+        
+        function dinga(a,b){
+            console.log("hi dinga...")
+            a()
+            b()
+        }
+        dinga(function dinga(){
+            console.log("im dinga..")
+        },
+        function mani(){
+            console.log("im siva")
+        })
+
+        //higherorder function
+        function calculate(c){
+            return c+500
+        }
+        function bonus(a,b){
+            let res=a(b)
+            console.log(res)
+        }
+        bonus(calculate,100)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr=[23,34,45,56]//homogeneous
+        console.log(arr)//entire array
+
+        //INORDER TO GET SINGLE OR SEPERATE VALUE FROM THE ARRAY WE HAVE TO GO FPOR INDEX VALUE...
+        console.log(arr)
+        console.log(arr[2])
+        console.log(arr[8])
+
+
+        let a=[23,"Raja",6n,"Rani"]//heterogenous
+        console.log(a)
+
+        //INORDER TO ADD A SINGLE VALUE INSIDE THE ARRAY WE HAVE TO GO FOR INDEX VALUE...
+        // console.log(a)
+        a[4]="Chinnu"
+        console.log(a)//concat
+
+
+        a[10]="Minnu"
+        console.log(a)//empty space
+        console.log(a[6])//undefined
+        console.log(a[20])//undefined
+
+
+        let arr1=["vignesh","suresh","santhosh","sanjay","ashish"]
+        console.log(arr1)
+
+        //PUSH...IT IS USED TO ADD AN ELEMENT AT THE END OF THE ARRAY
+        arr1.push("prasana")
+        console.log(arr1)
+
+        arr1.push("bunny")
+        console.log(arr1)
+
+        //pop...IT IS USED TO REMOVE THE ELEMENTS AT THE END OF THE ARRAY
+
+        arr1.pop()
+        console.log(arr1)
+
+        arr1.pop()
+        console.log(arr1)
+
+        //SHIFT...IT IS USED TO REMOVE AN ELEMEMNT FROM BEGINING FROM THE ARRAY
+        arr1.shift()
+        console.log(arr1)
+
+        arr1.shift()
+        console.log(arr1)
+
+        //UNSHIFT...IT IS USED TO ADD AN ELEMEMNT FROM BEGINING FROM THE ARRAY
+        arr1.unshift("suresh")
+        console.log(arr1)
+
+        arr1.unshift("vignesh")
+        console.log(arr1)
+
+
+        //INDEXOF...IT IS USED TO PROVIDE THE INDEX VALUE OF THE ELEMENT WHERE WE HAVE TO PROVIDE THE ELEMENT VALUE..
+
+        let b=arr1.indexOf("ashish")
+        console.log(b)
+
+        let c=arr1.indexOf("suresh")
+        console.log(c)
+
+        //AT...IT IS USED TO PROVIDE THE VALUE OF THE ELEMENT WHERE WE HAVE TO PASS THE INDEX VALUE AS A INPUT
+
+        let d=arr1.at(2)
+        console.log(d)
+
+        let e=arr1.at(1)
+        console.log(e)
+
+
+        //SLICE-IT IS USED TO EXTRACT A PART FROM THE ARRAY BUT SLICE WILL NOT AFFECT THE ORIGINAL ARRAY
+        let K=arr1.slice(1,3)
+        console.log(K)
+
+        let l=arr1.slice(2,4)
+        console.log(l)
+
+        //splice-it is used to extract a part from the array but where it will affect the original array...
+        // let y=arr1.splice(1,3)
+        // console.log(y)
+
+        // console.log(arr1)
+
+        // let z=arr1.splice(0,1)
+        // console.log(z)
+
+        //Reverse-IT IS USED TO REVERSE THE ENTIRE ARRAY
+        console.log(arr1)
+
+        let p=arr1.reverse()
+        console.log(p)
+
+        //join-it is used to join two array value
+        
+        let q=arr1.join(" the great ")
+        console.log(q)
+
+        //INCLUDES-IT WILL CHECK WHETHER THE VALUE IS PRESENT OR NOT.... IF IT IS PRESENT IT WILL RETURN TRUE OR ELSE FALSE..
+        let r=arr1.includes("vignesh")
+        console.log(r) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    /* Descendent Selector */
+    div p{
+        /* color: aliceblue; */
+        background-color: blue;
+        height: 30px;
+    }
+    /* child Selector */
+    div>span>h1{
+        color: aliceblue;
+        background-color: navy;
+    }
+
+    /* Adjacent sibling selector */
+    p+h3{
+        color: aqua;
+        background-color: black;
+
+    }
+
+    /* General siblings Selecctor */
+    h4~p{
+        color: rgb(234, 217, 217);
+        background-color: rgb(25, 107, 0);
+    }
+
+</style>
+<body>
+    <!-- Descendent Selector -->
+
+    <div>
+        <p>vignesh</p>
+        <p>surya</p>
+        <span>
+            <p>vijay</p>
+        </span>
+        <span>
+            <p>kamal</p>
+        </span>
+    </div><hr><br>
+
+    <!-- Child Selector -->
+
+    <div>
+        <h1>surya</h1>
+        <h1>vijay</h1>
+        <span>
+            <h1>ajith</h1>
+        </span>
+        <span>
+            <h1>kamal</h1>
+        </span>
+    </div><hr><br>
+
+    <!-- Adjacent Selector -->
+
+    <h2>surya</h2>
+    <div>lathif</div>
+    <p>sabari</p>
+    <h3>santhosh</h3><hr><br>
+
+    <!-- General Sibling Selector -->
+     <h4>thanga</h4>
+     <p>thiru</p>
+     <h6>mubeer</h6>
+     <p>syed</p>
+    
+</body>
+</html>

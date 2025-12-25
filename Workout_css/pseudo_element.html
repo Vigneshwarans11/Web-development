@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: blue;
+        }
+        p::first-line{
+            color: green;
+        }
+        h1::first-letter{
+            color: blue;
+        }
+        h2::before{
+            content:"Volleyball🏐";
+        }
+
+        h2::after{
+            content: "game";
+        }
+        ol>li::marker{
+            content: "✨";
+        }
+        ol>#demo::marker{
+            content: "👌";
+        }
+
+
+        [type="checked"]::checked{
+            height: 100px;
+            width: 100px;
+            accent-color: green;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- firstline -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus velit praesentium voluptate tempore maxime dicta iste, iure accusantium earum.</p>
+    <hr>
+    <!-- firstletter  -->
+     <h1>is my fav</h1><hr>
+
+     <!-- before -->
+      <h2> is my fav </h2><hr>
+      
+      <!-- marker -->
+       <ol>
+        <li>first</li>
+        <li>Second</li>
+       </ol><hr>
+
+       <!-- marker using id -->
+         <ol>
+        <li>first</li>
+        <li id="demo">Second</li>
+       </ol>
+
+
+       <!-- checked -->
+
+       <input type="checked">
+
+
+
+
+</body>
+</html>

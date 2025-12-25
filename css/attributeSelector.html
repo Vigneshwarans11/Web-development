@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* attribute */
+        [title]{
+            color: brown;
+            background-color: yellow;
+            border: 4px solid blue; 
+        }
+        /* Attribute = */
+        [tittle="para"]{
+            color: blue;
+            background-color: greenyellow;
+        }
+
+        /* Attributes ~= */
+        [class~="para"]{
+            color: darkgreen;
+            background-color: darkmagenta;
+        }
+        /* Attributes|= */
+        [tittle|="merge"]{
+            color: rgb(192, 213, 125);
+            background-color: deeppink;
+        }
+
+        /* Attribute^= */
+        [id^="vara"]{
+            color: blueviolet;
+            background-color: maroon;
+        }
+        [id$="web"]{
+            color: brown;
+            background-color: lightsteelblue;
+        }
+        [tittle*="sum"]{
+            color: gold;
+            background-color: midnightblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Attribute -->
+<h1 style="text-align: center;">Attribute</h1>
+    <p title="para">Dinga</p>
+    <p id="para">Dingi</p>
+    <p class="paragraph">Manga</p>
+    <p title="class">Mangi</p>
+    <p id="para">Chinnu</p><hr>
+
+
+    <!-- Attribute = -->
+     <h1 style="text-align: center;">Attribute =</h1>
+     <h1 tittle="para">Vimal</h1>
+     <h1 tittle="para ">Vignesh</h1>
+     <h1 tittle=" para">Vishal</h1>
+     <h1 tittle=" paragraph ">Vishnu</h1>
+     <h1 id="para">Vishwesh</h1><hr>
+
+
+     <!-- Attributes ~= -->
+      <h1 style="text-align: center;">Attribute ~= </h1>
+     <p class="para" >Virat</p>
+     <p id="para">Suraj</p>
+     <p class=" para">Dhoni</p>
+     <p class="para ">Rohith</p>
+     <p class=" para ">Yuvarj</p>
+     <p class="paragraph">Ashwin</p><hr>
+
+
+     <!-- Attributes|= -->
+      <h1 style="text-align: center;">Attribute|=</h1>
+      <p tittle="merge">Mango</p>
+      <p tittle="-merge">Apple</p>
+      <p tittle="merge-">Grapes</p>
+      <p tittle="mergee">Orange</p>
+      <p tittle="merge-data">Banana</p><hr>
+
+      <!-- Attribute^= -->
+       <h1 style="text-align: center;">Attribute^=</h1>
+
+       <p id="vara">vishnu</p>
+       <p id="vara ">vimal</p>
+       <p id=" vara">surath</p>
+       <p id="varagraph">vignesh</p>
+       <p id=" vara ">muthu</p><hr>
+
+       <!-- Attribute$= -->
+       <h1 style="text-align: center;">Attribute$=</h1>
+
+       <p id="web ">Vimal</p>
+       <p id=" web">Vignesh</p>
+       <p id=" web ">Vishal</p>
+       <p id="userweb">Vishnu</p>
+       <p id="webtech">Vishwesh</p><hr>
+
+       <!-- Attribute*= -->
+       <h1 style="text-align: center;">Attribute*=</h1>
+
+       <p tittle=" sum">surya</p>
+       <p tittle="sum ">jothika</p>
+       <p tittle=" summation ">raj</p>
+     
+
+
+</body>
+</html>

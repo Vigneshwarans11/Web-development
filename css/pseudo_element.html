@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   <style> 
+
+   p::first-line{
+    color: green;
+   }
+
+   h1{
+    color: blue;
+   }
+   h2{
+    color: rgb(67, 64, 2);
+   }
+
+   h1::first-letter, h1::after{
+    content: 'Vignesh 😊';
+    color: red;
+   }
+
+   h2::before{
+    content: 'Volleyball🏐';
+   }
+
+   ol>li::marker{
+    content: '✌️';
+   }
+
+   ol>#demo::marker{
+    content: '😊';
+   }
+</style>
+
+    
+</head>
+<body>
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit magnam sunt, quaerat nihil quasi enim maiores porro voluptatum fuga id atque ducimus animi nulla modi dolores. Similique optio atque eius.</p>
+    
+    <h1>my name is </h1>
+    <h2>is my fav game</h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <p></p>
+
+
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+    </ol>
+
+    <ol>
+        <li>First</li>
+        <li id="demo">Second</li>
+    </ol>
+</body>
+</html>

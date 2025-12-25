@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[23,34,54,75]
+        console.log(arr)
+
+        //normal way (insex value) inorder to get single value...
+        console.log(arr[2])
+        console.log(arr[5])
+
+        //Array Destructuring...
+        let arr1=[22,"vignesh",56,"suman","maharajan"]
+        console.log(arr1)
+        
+        let[a,b,c,d,e,f]=arr1
+        console.log(f)//undefined
+        console.log(c)//56
+
+
+
+        let obj={
+            Name:"vignesh",
+            Age:21,
+            City:"Chennai",
+            Country:"India"
+        }
+        console.log(obj)//entire array
+
+        //Normal way (dot notation)..inorder to get single value 
+        console.log(obj.Age)//21
+        console.log(obj.age)//undefined
+
+        //Object Destructuring
+
+         let obj1={
+            Name:"surya",
+            Age:21,
+            City:"pdkt",
+            Country:"India"
+        }
+        console.log(obj)
+
+        let{Name,Age,City,Country}=obj1
+        console.log(Name)
+        console.log(Age)
+
+
+
+    </script>
+</body>
+</html>

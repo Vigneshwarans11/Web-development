@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent{
+            height: 500px;
+            width: 600px;
+            border: solid 3px blue;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction:row;
+
+
+            flex-wrap: nowrap;
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
+
+            flex-flow: column wrap-reverse;
+            flex-flow: row wrap-reverse; */
+
+
+            justify-content: center;
+            justify-content: flex-start;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: flex-end;
+            justify-content: center;
+
+
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+        }
+
+        .cls{
+            height: 100px;
+            width: 100px;
+            border: 3px solid ;
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
+        }
+
+        #demo1{
+            order: 4;
+            flex-grow: 20;
+        }
+
+        #demo2{
+            order:3 ;
+            flex-grow: 90;
+        }
+
+        #demo3{
+            order: 2;
+        }
+        #demo4{
+            order: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div id="demo1"class="cls"><img src="../image/1.jpg" alt="" ></div>
+        <div id="demo2"class="cls"><img src="../image/duck-9734429_1280.jpg" alt=""></div>
+        <div id="demo3"class="cls"><img src="../image/dog-8781844_1280.jpg" alt=""></div>
+        <div id="demo4"class="cls"><img src="../image/bird-9735518_1280.jpg" alt=""></div>
+
+        
+         <!-- <div id="demo1"class="cls"><img src="../image/1.jpg" alt="" ></div>
+        <div id="demo2"class="cls"><img src="../image/duck-9734429_1280.jpg" alt=""></div>
+        <div id="demo3"class="cls"><img src="../image/dog-8781844_1280.jpg" alt=""></div>
+        <div id="demo4"class="cls"><img src="../image/bird-9735518_1280.jpg" alt=""></div>
+         <div id="demo1"class="cls"><img src="../image/1.jpg" alt="" ></div>
+        <div id="demo2"class="cls"><img src="../image/duck-9734429_1280.jpg" alt=""></div>
+        <div id="demo3"class="cls"><img src="../image/dog-8781844_1280.jpg" alt=""></div>
+        <div id="demo4"class="cls"><img src="../image/bird-9735518_1280.jpg" alt=""></div> -->
+    </div>
+    
+</body>
+</html>

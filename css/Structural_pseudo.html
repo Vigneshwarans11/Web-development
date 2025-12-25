@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* firstchild */
+        div>h1:first-child{
+            color: aliceblue;
+            background-color: black;
+            border-radius: 10px 0px 0px 10px;
+        }
+        /* last child */
+        div>h2:last-child{
+            color: blue;
+            background-color: darkcyan;
+        }
+
+        /* nth child */
+        div>h3:nth-child(2){
+            color: rgb(224, 207, 207);
+            background-color: rgb(0, 0, 0);
+        }
+
+        div>h3:nth-child(odd){
+            color: brown;
+            background-color: rgb(0, 255, 64);
+        }
+
+        div>h3:nth-child(even){
+            color: rgb(255, 251, 251);
+            background-color: rgb(255, 0, 179);
+        }
+
+        /* nth child (demo)*/
+
+        #demo>:nth-child(4){
+            color: deepskyblue;
+            background-color: yellow;
+        }
+
+        #demo>:nth-child(odd){
+            color: rgb(0, 255, 102);
+            background-color: rgb(255, 0, 0);
+        }
+
+        #demo>:nth-child(even){
+            color: rgb(255, 230, 0);
+            background-color: rgb(0, 183, 255);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- first and last child -->
+     <h1 style="text-align: center;">first and last child</h1>
+     <div>
+        <h1>vignesh</h1>
+        <p>suman</p>
+        <h2>lokesh</h2>
+        <p>vishal</p>
+        <h2>suraj</h2>
+     </div>
+     <hr>
+      <div>
+        <h1>dinesh</h1>
+        <p>kishor</p>
+        <h2>raja</h2>
+        <p>raji</p>
+        <h2>vimal</h2>
+    </div>
+    <hr>
+
+
+    <!-- nth child -->
+     <h1 style="text-align: center;">nth child</h1>
+     <div >
+        <h3>apple</h3>
+        <h3>orange</h3>
+        <h3>grapes</h3>
+        <h3>mango</h3>
+        <h3>dates</h3>
+        <h3>guava</h3>
+     </div>
+     <hr>
+
+     <h1 style="text-align: center;">nth child using (demo)</h1>
+
+     <div id="demo">
+        <h4>dinesh</h4>
+        <p>kishor</p>
+        <h2>raja</h2>
+        <p>raji</p>
+        <h2>vimal</h2>
+    </div>
+
+    <hr>
+
+
+
+
+
+
+</body>
+</html>

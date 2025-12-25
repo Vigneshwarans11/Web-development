@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent{
+            height: 500px;
+            width: 600px;
+            border: 2px solid blue;
+
+            display: flex;
+            /* flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: row;
+
+            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap; */
+
+            /* flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap-reverse; */
+
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+
+            align-items: flex-start;
+            align-items: center;
+            align-items: flex-end;
+
+
+            
+
+        }
+        .cls{
+            height: 100px;
+            width: 100px;
+            border: 3px solid red;
+        }
+
+        #demo1{
+            background-color: blue;
+            order: 4;
+            /* flex-grow: 20; */
+            flex-shrink: 20;
+
+        }
+        #demo2{
+            background-color: blueviolet;
+            order: 3;
+            /* flex-grow: 30; */
+            flex-shrink: 40;
+        }
+
+        #demo3{
+            background-color: yellow;
+            order: 2;
+            /* flex-grow: 60; */
+            flex-shrink: 20;
+            /* align-self: center; */
+        }
+        #demo4{
+            background-color: green;
+            order: 1;
+            /* flex-grow: 30; */
+            flex-shrink: 60;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- #parent>div#demo$*4 -->
+    <div id="parent">
+        <div id="demo1" class="cls">one</div>
+        <div id="demo2" class="cls">two</div>
+        <div id="demo3" class="cls">three</div>
+        <div id="demo4" class="cls">four</div>
+        <div id="demo1" class="cls">one</div>
+        <div id="demo2" class="cls">two</div>
+        <div id="demo3" class="cls">three</div>
+        <div id="demo4" class="cls">four</div>
+        <div id="demo1" class="cls">one</div>
+        <div id="demo2" class="cls">two</div>
+        <div id="demo3" class="cls">three</div>
+        <div id="demo4" class="cls">four</div>
+    </div>
+</body>
+</html>
